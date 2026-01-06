@@ -1,2 +1,17 @@
 # Weather App
-Basic weather application built using Weatherstack API
+Basic weather application built using Weatherstack API. Documentation for Weatherstack can be found here: https://weatherstack.com/documentation
+
+## How to use
+1. Clone the repository to download the files
+2. Create an account on Weatherstack API to receive your access key
+3. In `script.js`, paste your access key in place of `API_ACCESS_KEY` (WARNING: do not publish the key to the internet, use .env files to protect your API key. This is just for testing.)
+4. Run the HTML in a live server and search for a major city
+5. The result should be returned on the screen
+
+## What I learned
+- How to invoke an API using an API Key
+- Working with the Weatherstack API to see the returned JSON object and pull data from it
+
+## Upcoming changes I want to make
+- I want to add some CSS to make it look better
+- Add more useful data for the application
