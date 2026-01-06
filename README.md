@@ -1,5 +1,8 @@
 # Weather App
-Basic weather application built using Weatherstack API. Documentation for Weatherstack can be found here: https://weatherstack.com/documentation
+Basic weather application built using Weatherstack API. 
+
+Weatherstack dashboard: https://weatherstack.com/dashboard 
+Weatherstack docs: https://weatherstack.com/documentation
 
 ## How to use
 1. Clone the repository to download the files
