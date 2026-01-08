@@ -56,5 +56,14 @@ button:hover {
     max-height: 300px;
     max-width: 300px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 5px 15px 15px 15px;
+}
+
+#weather-report-container:empty {
+    display: none;
+    box-shadow: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
 }

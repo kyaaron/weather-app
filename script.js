@@ -4,23 +4,22 @@
 const getWeatherData = () => {
     const userInput = document.querySelector("input").value;
     const accessKey = "3ea447546df23eb5c47b7b25e3d05262";  // This needs updated to your API KEY
-    console.log(userInput);
     const url = `https://api.weatherstack.com/current?access_key=${accessKey}&query=${userInput}`;
-    console.log(url);
+    const weatherReportContainer = document.querySelector("#weather-report-container");
     
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            document.querySelector("#location-header").innerText = data.location.name;
-            document.querySelector("#location-temperature").innerText = `${data.current.temperature} ℃`;
-            document.querySelector("#weatherCondition").innerText = `It is currently ${data.current.weather_descriptions[0].toLowerCase()} outside.`;
-            
-            document.querySelector("#airQuality").innerText = `Air quality: ${translateAirQuality(data.current.air_quality["us-epa-index"])}`;
-            
-            document.querySelector("#windInfo").innerText = `The wind is blowing at a speed of ${data.current.wind_speed} in the direction of ${data.current.wind_dir}.`;
+            weatherReportContainer.innerHTML = `
+                <h2>${data.location.name}</h2>
+                <h2>${data.current.temperature}°C</h2>
+                <p>It is currently ${data.current.weather_descriptions[0].toLowerCase()} outside.</p2>
+                <p>Air Quality: ${translateAirQuality(data.current.air_quality["us-epa-index"])}</p>
+                <p>The wind is blowing at a speed of ${data.current.wind_speed} in the direction of ${data.current.wind_dir}.</p>
+            `;
         })
         .catch(err => {
-        console.log(`Error: ${err}`);
+            console.log(`Error: ${err}`);
         });
 }
 
