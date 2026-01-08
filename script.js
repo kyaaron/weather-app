@@ -3,7 +3,7 @@
 
 const getWeatherData = () => {
     const userInput = document.querySelector("input").value;
-    const accessKey = "3ea447546df23eb5c47b7b25e3d05262";  // This needs updated to your API KEY
+    const accessKey = "INSERT_WEATHERSTACK_API_KEY_HERE";  // This needs updated to your API KEY
     const url = `https://api.weatherstack.com/current?access_key=${accessKey}&query=${userInput}`;
     const weatherReportContainer = document.querySelector("#weather-report-container");
     
