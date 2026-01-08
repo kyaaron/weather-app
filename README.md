@@ -1,7 +1,7 @@
 # Big City Weather App
 Basic weather application built using Weatherstack API. 
 
-Weatherstack dashboard: https://weatherstack.com/dashboard 
+Weatherstack dashboard: https://weatherstack.com/dashboard \
 Weatherstack docs: https://weatherstack.com/documentation
 
 ## How to use
