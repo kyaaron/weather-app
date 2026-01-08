@@ -1,4 +1,4 @@
-# Weather App
+# Big City Weather App
 Basic weather application built using Weatherstack API. 
 
 Weatherstack dashboard: https://weatherstack.com/dashboard 
@@ -14,7 +14,4 @@ Weatherstack docs: https://weatherstack.com/documentation
 ## What I learned
 - How to invoke an API using an API Key
 - Working with the Weatherstack API to see the returned JSON object and pull data from it
-
-## Upcoming changes I want to make
-- I want to add some CSS to make it look better
-- Add more useful data for the application
+- HTML elements contain whitespace when they are empty, but have opening and closing elements on different lines
